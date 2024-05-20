@@ -7,5 +7,5 @@ variable "AWS_DEFAULT_PROFILE" {
 
 variable "bucket_names" {
   type = list(string)
-  default = [ "test-izzuddin-tf-foreach1withoutput", "test-izzuddin-tf-foreach2withoutput", "test-izzuddin-tf-foreach3withoutput" ]
+  default = [ "test-izzuddin-tf-foreach1", "test-izzuddin-tf-foreach2", "test-izzuddin-tf-foreach3" ]
 }
