@@ -1,0 +1,2 @@
+variable "bucketname" {}
+variable "environment" {}

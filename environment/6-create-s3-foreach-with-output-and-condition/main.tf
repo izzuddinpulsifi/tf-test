@@ -24,3 +24,9 @@ resource "aws_s3_bucket" "test-izzuddin-tf-foreachtestwithoutputwithcondition" {
     Environment = "izzuddin-Test"
   }
 }
+output "bucket_names" {
+  value = [
+    for bucket in var.bucket_names:
+    aws_s3_bucket.test-izzuddin-tf-foreachtestwithoutputwithcondition[bucket].object_lock_enabled
+  ]
+}
